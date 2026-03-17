@@ -1486,7 +1486,7 @@
   "Something went wrong while authenticating your request. Please try again.": "Something went wrong while authenticating your request. Please try again.",
   "The owner of GitLab account has been requested to install the application. Once approved, the connection will be completed.": "The owner of GitLab account has been requested to install the application. Once approved, the connection will be completed.",
   "Enable previews of GitLab issues and merge requests in documents by connecting a GitLab organization or specific repositories to {appName}.": "Enable previews of GitLab issues and merge requests in documents by connecting a GitLab organization or specific repositories to {appName}.",
-  "Disconnecting will prevent previewing links from GitLab in documents. Are you sure?": "Disconnecting will prevent previewing links from GitLab in documents. Are you sure?",
+  "Disconnecting will prevent previewing links from GitLab in documents. Are you sure?": "La déconnexion empêchera l'aperçu des liens GitLab dans les documents. Êtes-vous sûr ?",
   "Google Analytics": "Google Analytics",
   "Add a Google Analytics 4 measurement ID to send document views and analytics from the workspace to your own Google Analytics account.": "Ajouter un identifiant de mesure Google Analytics 4 pour envoyer le nombre de vues de documents et les statistiques de l'espace de travail à votre propre compte Google Analytics.",
   "Measurement ID": "ID de mesure",
