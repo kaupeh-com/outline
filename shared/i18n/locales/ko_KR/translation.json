@@ -427,8 +427,6 @@
   "Current version": "현재 버전",
   "{{userName}} edited": "{{userName}} 이(가) 수정함",
   "Revision options": "수정 옵션",
-  "Results": "결과",
-  "No results for {{query}}": "{{query}} 에 대한 검색결과가 없습니다.",
   "Manage": "관리",
   "All members": "모든 구성원",
   "Everyone in the workspace": "워크스페이스의 모든 구성원",
