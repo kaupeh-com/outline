@@ -1250,6 +1250,8 @@
   "Allow members to connect to this workspace with MCP to read and write data.": "Allow members to connect to this workspace with MCP to read and write data.",
   "Use the following endpoint to connect to the MCP server from your app. Find out more about setup in <a>the docs</a>.": "Use the following endpoint to connect to the MCP server from your app. Find out more about setup in <a>the docs</a>.",
   "Copy URL": "Copy URL",
+  "Additional guidance": "Additional guidance",
+  "You can use these optional instructions to tell MCP clients how to use your knowledge base.": "You can use these optional instructions to tell MCP clients how to use your knowledge base.",
   "AI answers": "AI 回答",
   "Use AI to get direct answers to questions in search. This feature requires a paid license.": "使用 AI 获取搜索中问题的直接答案。此功能需要付费许可证。",
   "Add people to {{groupName}}": "添加用户到 {{groupName}}",
