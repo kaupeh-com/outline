@@ -427,8 +427,6 @@
   "Current version": "現在のバージョン",
   "{{userName}} edited": "{{userName}} が編集しました",
   "Revision options": "改訂オプション",
-  "Results": "検索結果",
-  "No results for {{query}}": "{{query}} に該当する検索結果はありませんでした",
   "Manage": "管理者",
   "All members": "全員",
   "Everyone in the workspace": "ワークスペースにいる全ての人",
