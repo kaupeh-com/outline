@@ -75,25 +75,12 @@ jobs:
           username: kaupeh-com
           password: ${{ steps.ghcr-creds.outputs.token }}
 
-      - name: Build base image
+      - name: Build and push image
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: ./Dockerfile.base
-          push: false
-          load: true
-          tags: kaudocs-base:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-
-      - name: Build and push runtime image
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          file: ./Dockerfile
+          file: ./Dockerfile.combined
           push: true
-          build-args: |
-            BASE_IMAGE=kaudocs-base:latest
           tags: |
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.tag.outputs.tag }}
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
