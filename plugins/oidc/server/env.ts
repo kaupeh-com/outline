@@ -105,6 +105,16 @@ class OIDCPluginEnvironment extends Environment {
     allow_underscores: true,
   })
   public OIDC_LOGOUT_URI = this.toOptionalString(environment.OIDC_LOGOUT_URI);
+
+  /**
+   * An entitlement string that must be present in the OIDC profile or id_token
+   * "entitlements" claim for a user to be granted access. If unset, any
+   * authenticated user is allowed. Example: "app:kaudocs"
+   */
+  @IsOptional()
+  public OIDC_REQUIRED_ENTITLEMENT = this.toOptionalString(
+    environment.OIDC_REQUIRED_ENTITLEMENT
+  );
 }
 
 export default new OIDCPluginEnvironment();

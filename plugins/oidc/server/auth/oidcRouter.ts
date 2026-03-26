@@ -121,6 +121,24 @@ export function createOIDCRouter(
             );
           }
 
+          // Kaupeh: enforce app entitlement from KauID.
+          // The id_token must contain "app:kaudocs" in the entitlements claim.
+          const requiredEntitlement = env.OIDC_REQUIRED_ENTITLEMENT;
+          if (requiredEntitlement) {
+            const entitlements: string[] =
+              (profile as Record<string, unknown>).entitlements as string[] ??
+              (token as Record<string, unknown>).entitlements as string[] ??
+              [];
+            if (!Array.isArray(entitlements) || !entitlements.includes(requiredEntitlement)) {
+              Logger.warn(
+                `User ${email} denied access: missing entitlement "${requiredEntitlement}". Has: ${JSON.stringify(entitlements)}`
+              );
+              throw AuthenticationError(
+                `You do not have access to this application. Please contact your administrator to request the "${requiredEntitlement}" entitlement.`
+              );
+            }
+          }
+
           const team = await getTeamFromContext(context);
           const client = getClientFromOAuthState(context);
           const user =
